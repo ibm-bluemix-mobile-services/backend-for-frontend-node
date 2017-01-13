@@ -28,8 +28,6 @@ To run the template, type the following command while inside the project directo
 
 Browse through the tabs to familiarize yourself with the template.
 
-Click the **Run** tab in the top right hand corner to start the server. After the server is started, click the **Explore** tab to see and test the API.
-
 ### Publishing to Bluemix
 To publish your local application to Bluemix, use the command:
 

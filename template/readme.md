@@ -21,7 +21,7 @@ Ensure that you have:
     ├── manifest.yml        # Used by Cloud Foundry to upload your project to Bluemix and bind the services to your backend
     └── package.json        # Contains name, version, description, scripts, dependencies, etc. of the backend
 
-### Running API Connect
+### Running the template
 To run the template, type the following command while inside the project directory:
 
 `npm start`

@@ -38,9 +38,9 @@
 		app.events.on('complete', function (event, resolve) {
 
 			var cloudantService = config.services['cloudantNoSQLDB'],
-				path = event.home + '/server/';
+				path = event.home;
 
-			saveFile(path + 'datasources.json', JSON.stringify({
+			saveFile(path + '/server/datasources.json', JSON.stringify({
 				'Cloudant': {
 					database: cloudantService.data[0].name,
 					username: cloudantService.credentials.username,
@@ -56,7 +56,7 @@
 					services[key].push(config.services[key]);
 				});
 
-				return saveFile(path + 'env.json', JSON.stringify(services, null, 2));
+				return saveFile(path + '/server/env.json', JSON.stringify(services, null, 2));
 			}).then(function () {
 				console.log('Finished copying template\n');
 				console.log('Your project has been created at ' + app.text.yellow('projects/') + app.text.yellow(config.app.get('name')) + '\n');

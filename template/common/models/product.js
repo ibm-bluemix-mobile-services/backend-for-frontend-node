@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 IBM Corp.
+ * Copyright 2016, 2017 IBM Corp.
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
  *  You may obtain a copy of the License at
@@ -29,4 +29,29 @@ module.exports = function(Product) {
 			returns: [{arg: 'message', type: 'string'}],
 		}
 	);
+
+	var methodNames = [
+			'upsert',
+			'updateAll',
+			'updateAttributes',
+			'createChangeStream',
+			'replace',
+			'replaceById',
+			'upsertWithWhere',
+			'replaceOrCreate'
+	];
+
+	// clean up swagger
+	methodNames.forEach( function(methodName) {
+			disableMethods(Product, methodName);
+	});
+
+	function disableMethods(model, methodName) {
+		if (methodName != 'updateAttributes') {
+			model.disableRemoteMethodByName(methodName, true);
+		}
+		else {
+			model.disableRemoteMethodByName(methodName, false);
+		}
+	}
 };

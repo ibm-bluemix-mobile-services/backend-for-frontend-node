@@ -1,0 +1,43 @@
+{
+	"name": "Product",
+	"plural": "Products",
+	"base": "PersistedModel",
+	"idInjection": true,
+	"options": {
+		"validateUpsert": true
+	},
+	"properties": {
+		"name": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"rating": {
+			"type": "string",
+			"required": true
+		},
+		"picture": {
+			"type": "string",
+			"required": true
+		},
+		"thumbnail": {
+			"type": "string",
+			"required": true
+		},
+		"price": {
+			"type": "number",
+			"required": true
+		},
+		"category": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"validations": [],
+	"relations": {},
+	"acls": [],
+	"methods": {}
+}

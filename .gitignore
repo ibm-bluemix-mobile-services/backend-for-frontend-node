@@ -1,0 +1,8 @@
+.generator/
+projects/
+node_modules
+template/manifest.yml
+template/node_modules
+template/server/env.json
+template/server/datasources.json
+*.DS_Store

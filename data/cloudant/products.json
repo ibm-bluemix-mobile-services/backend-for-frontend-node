@@ -1,0 +1,164 @@
+{
+	"docs": [
+		{
+			"name":"Royal Neck Tie",
+			"description":"This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+			"category":"Ties",
+			"price":"7.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/royal-neck-tie.jpg",
+			"thumbnail":"/api/Products/image/clothes/royal-neck-tie.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Count Neck Tie",
+			"description":"This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+			"category":"Ties",
+			"price":"9.95",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/count-neck-tie.jpg",
+			"thumbnail":"/api/Products/image/clothes/count-neck-tie.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Tweed Jacket",
+			"description":"This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+			"category":"Jackets",
+			"price":"179.95",
+			"rating":"★★★★☆",
+			"picture":"/api/Products/image/clothes/tweed-jacket.jpg",
+			"thumbnail":"/api/Products/image/clothes/tweed-jacket.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Sport Trouser",
+			"description":"A pair of sport trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+			"category":"Trousers",
+			"price":"78.95",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/sport-trouser.jpg",
+			"thumbnail":"/api/Products/image/clothes/sport-trouser.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Dinner Jacket",
+			"description":"This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+			"category":"Jackets",
+			"price":"149.99",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/dinner-jacket.jpg",
+			"thumbnail":"/api/Products/image/clothes/dinner-jacket.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Neck Tie",
+			"description":"This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+			"category":"Ties",
+			"price":"9.95",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/neck-tie.jpg",
+			"thumbnail":"/api/Products/image/clothes/neck-tie.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Corporal Trouser",
+			"description":"A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+			"category":"Trousers",
+			"price":"69.95",
+			"rating":"★★★★☆",
+			"picture":"/api/Products/image/clothes/corporal-trouser.jpg",
+			"thumbnail":"/api/Products/image/clothes/corporal-trouser.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Cotton T-Shirt",
+			"description":"A classic T-Shirt featuring a single chest pocket and button cuffs.",
+			"category":"Shirts",
+			"price":"79.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/cotton-tshirt.jpg",
+			"thumbnail":"/api/Products/image/clothes/cotton-tshirt.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Plain Blue T-Shirt",
+			"description":"A classic T-Shirt featuring a single chest pocket and button cuffs",
+			"category":"Shirts",
+			"price":"69.95",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/plain-blue-tshirt.jpg",
+			"thumbnail":"/api/Products/image/clothes/plain-blue-tshirt.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Premium T-Shirt",
+			"description":"A classic T-Shirt featuring a single chest pocket and button cuffs.",
+			"category":"Shirts",
+			"price":"79.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/premium-tshirt.jpg",
+			"thumbnail":"/api/Products/image/clothes/premium-tshirt.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"White Trouser",
+			"description":"A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+			"category":"Trousers",
+			"price":"78.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/white-trouser.jpg",
+			"thumbnail":"/api/Products/image/clothes/white-trouser.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Tough Tweed Jacket",
+			"description":"This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+			"category":"Jackets",
+			"price":"179.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/tough-tweed-jacket.jpg",
+			"thumbnail":"/api/Products/image/clothes/tough-tweed-jacket.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Blue Navy T-Shirt",
+			"description":"A classic T-Shirt featuring a single chest pocket and button cuffs.",
+			"category":"Shirts",
+			"price":"69.95",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/blue-navy-tshirt.jpg",
+			"thumbnail":"/api/Products/image/clothes/blue-navy-tshirt.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Soft Trouser",
+			"description":"A pair of soft trousers featuring a classic five pocket design, button fly fastening and belt loops.",
+			"category":"Trousers",
+			"price":"69.95",
+			"rating":"★★★★☆",
+			"picture":"/api/Products/image/clothes/soft-trouser.jpg",
+			"thumbnail":"/api/Products/image/clothes/soft-trouser.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Style Dinner Jacket",
+			"description":"This wool rich tweed blazer features a three button fastening, four outer pockets and buttoned cuffs. Inside, the jacket is part lined and has two pockets with added headphone cable routing.",
+			"category":"Jackets",
+			"price":"149.99",
+			"rating":"★★★★★",
+			"picture":"/api/Products/image/clothes/style-dinner-jacket.jpg",
+			"thumbnail":"/api/Products/image/clothes/style-dinner-jacket.jpg",
+			"loopback__model__name":"Product"
+		},
+		{
+			"name":"Baron Neck Tie",
+			"description":"This tie is made from care-free micro fiber - a textile that is almost identical in look, feel, shine, and drape to silk but is much more stain resistant. It is the perfect fabric for any daily wear necktie.",
+			"category":"Ties",
+			"price":"7.95",
+			"rating":"★★★☆☆",
+			"picture":"/api/Products/image/clothes/baron-neck-tie.jpg",
+			"thumbnail":"/api/Products/image/clothes/baron-neck-tie.jpg",
+			"loopback__model__name":"Product"
+		}
+	]
+}

@@ -1,0 +1,60 @@
+{
+	"app": {
+		"name": "Bluemix Backend for Frontend",
+		"description": "The Backend for Frontend template that demonstrates Mobile services integration with LoopBack, \nCloudant NoSQL DB, and Object Storage services on Bluemix. The template exhibits common architectural design patterns \nthat developers can use to model a backend on Bluemix."
+	},
+	"runtime": {
+		"name": "Node.js",
+		"description": "Loopback"
+	},
+	"services": [
+	{
+		"name": "Cloudant NoSQL Database",
+		"deployname": "data",
+		"description": "Massively scalable, secure, and continuously operational database",
+		"type": "cloudantNoSQLDB",
+		"plan": "Lite",
+		"data": [
+			{
+				"name": "products",
+				"path": "data/cloudant/products.json"
+			}
+		],
+		"redeploy": true
+	},
+	{
+		"name": "Object Storage",
+		"deployname": "storage",
+		"description": "Unstructured cloud data store",
+		"type": "Object-Storage",
+		"data": [
+			{
+				"name": "clothes",
+				"path": "data/object-storage/clothes/"
+			}
+		],
+		"redeploy": true
+	},
+	{
+		"name": "Mobile Client Access",
+		"deployname": "authentication",
+		"description": "Ensure communications with backend systems are secure",
+		"type": "AdvancedMobileAccess",
+		"plan": "Bronze"
+	},
+	{
+		"name": "Push Notifications",
+		"deployname": "push",
+		"description": "Engage Android and iOS mobile users by sending relevant content including interactive notifications",
+		"type": "imfpush",
+		"plan": "Basic"
+	},
+	{
+		"name": "Mobile Analytics",
+		"deployname": "analytics",
+		"description": "Gain valuable insight into how your app is performing and being used",
+		"type": "mobile-analytics_Prod",
+		"plan": "lite"
+	}
+	]
+}

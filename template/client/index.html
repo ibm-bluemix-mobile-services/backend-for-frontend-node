@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Backend for Frontend</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="icon" type="image/png" href="../img/favicon/favicon.png">
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+
+	<body>
+		<header class="design-guide__header">
+			<div class="header__logo">
+				<a id="header__logo--top" href="/" ><h3>IBM <span class="header__logo--bold">Bluemix</span> Omnichannel Development</h3></a>
+			</div> <!-- .header__logo -->
+		</header>
+
+		<div class="design-guide-homepage">
+			<div class="homepage__main">
+					<div class="homepage__main-title">
+						<h1><span class="bold">Bluemix</span></h1>
+						<h1>Backend for Frontend</h1>
+					</div> <!-- .homepage__main-title -->
+					<div class="homepage__main-links">
+						<a href="/explorer/#!/Product" target="_blank"><button class="btn--secondary">View API Reference</button></a>
+						<a href="https://github.com/ibm-bluemix-mobile-services/backend-for-frontend-node" target="_blank"><button class="btn--secondary" id="homepage__btn--blue">Get the Source Code</button></a>
+						<a href="/explorer/swagger.json" target="_blank"><button class="btn--secondary">Swagger Definition</button></a>
+					</div> <!-- .homepage__main-links -->
+					<div class="homepage__main-down">
+						<h2>Explore this Backend</h2>
+						<a href="#about" class="arrow"><img src="../img/assets/arrow.svg" alt="arrow"></a>
+					</div> <!-- .homepage__main-down -->
+			</div> <!-- .homepage__main -->
+
+			<div class="design-guide-base-elements">
+				<div class="base-elements__header" id="banner"></div>
+				<div class="base-elements__container">
+					<div class="base-elements__element">
+						<div class="base-elements-group" id="about">
+							<h1 class="base-elements-group__heading">About this Backend</h1>
+							<p class="base-elements-group__description">
+								The Bluemix Backend for Frontend template demonstrates how to create and deploy omnichannel application to the IBM Bluemix Cloud Platform. The project has the the ability to browse a list of products and supports the viewing of images for each item in the product list.
+
+							</p>
+							<p class="base-elements-group__description">
+								A "Backend for Frontend" application defines different backend services and capaiblities for different frontend clients. Using this architecture, developers can expose custom APIs from their Compute to deliver client solutions with a scalable cloud backend.
+							</p>
+							<p class="base-elements-group__description">
+								This lightweight Node backend uses Bluemix Mobile services, Cloudant NoSQL DB, Object Storage, and a LoopBack runtime to expose a Swagger definition. Using the Bluemix, we can connect this Compute to our project, generate a SDK, plug the APIs into mobile or web clients, and much more.
+							</p>
+							<p class="base-elements-group__description">
+								The following sections explain what each of these services do, how they are implemented in this backend, and where to get more detailed information
+								about the services from the official documentation.
+							</p>
+							<br style="clear:both;"/>
+							<ul class="base-elements-group__base-elements">
+								<li class="header__title" id="first">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog boilerplate style-scope d-tile">
+												<img class="tile-image" src="../img/logos/loopback.jpeg">
+											</div>
+											<h2 class="base-element__header--heading ibm-header-logo">LoopBack</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												The LoopBack framework is a set of Node.js modules that you can use independently or together to quickly build REST APIs.
+
+												A LoopBack application interacts with datasources through the LoopBack model API, available locally within Node.js, remotely over REST, and via native client APIs for iOS, Android, and HTML5. Using these APIs, apps can query databases, store data, upload files, send emails, create push notifications, register users, and perform other actions provided by datasources and services.
+												<br>
+												<a href="../img/screenshots/loopback.jpg" target="_blank"><img src="../img/screenshots/loopback.jpg"></a>
+												<br>
+												In this backend, we use LoopBack for a single point of REST integration for our Cloudant NoSQL DB datasource and images stored on Object Storage.
+												Click the <strong>View API Reference</strong> button to browse the API for the Bluemix Backend for Frontend template.
+												<br>
+												<br>
+												For more information about LoopBack, see the official
+												documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example-code">
+											<div class="base-element__example">
+												<a href="http://loopback.io/doc/en/lb2/index.html" target="_blank"><button class="btn">See Docs</button></a>
+											</div> <!-- .base-element__example -->
+										</div> <!-- .base-element__example-code -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+								<li class="header__title" id="second">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+												<img class="tile-image" src="../img/logos/cloudant.svg">
+											</div> <!-- .tile-image-container -->
+											<h2 class="base-element__header--heading ibm-header-logo">Cloudant NoSQL DB</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												Cloudant NoSQL DB provides access to a fully managed NoSQL JSON data layer that's always on. This service is compatible with CouchDB,
+												and accessible through a simple to use HTTP interface for mobile and web application models.
+												<br>
+												<a href="../img/screenshots/cloudant.png" target="_blank"><img src="../img/screenshots/cloudant.png"></a>
+												<br>
+												In this backend, we provision a Cloudant NoSQL DB service instance and supply that with data from a
+												<strong>products.json</strong> file which contains a list of products for the Backend for Frontend template.
+												<br>
+												<br>
+												If you open the Cloudant NoSQL DB service instance, you can browse the data inside the template. Each document contains information about the price,
+												rating, description, etc. for each article of clothing that is available from the store.
+												<br>
+												<br>
+												For more information about Cloudant NoSQL DB, see the official documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example-code">
+											<div class="base-element__example">
+												<a href="https://console.ng.bluemix.net/docs/services/Cloudant/index.html#Cloudant" target="_blank"><button class="btn">See Docs</button></a>
+											</div> <!-- .base-element__example -->
+										</div> <!-- .base-element__example-code -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+								<li class="header__title" id="third">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+												<img class="tile-image" src="../img/logos/object-storage.svg">
+											</div> <!-- .tile-image-container -->
+											<h2 class="base-element__header--heading ibm-header-logo">Object Storage</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												Object Storage provides an unstructured cloud data store to build and deliver cloud applications and services with lowered cost, reliability, and speed to market.
+												Bluemix developers and users can access and store unstructured data content and can interactively compose and connect to applications and services.
+												The Object Storage service also provides programmatic access via API, SDKs and a consumable UI for object management.
+												<br>
+												<a href="../img/screenshots/object-storage.png" target="_blank"><img src="../img/screenshots/object-storage.png"></a>
+												<br>
+												In this backend, we provision a Object Storage service instance and supply that with data from a
+												<strong>clothes</strong> folder which contains the images for the template.
+												<br>
+												<br>
+												If you open the Object Storage service instance, you can browse the data inside the template. The <strong>clothes</strong> container contains the images
+												of each item available.
+												<br>
+												<br>
+												For more information about Object Storage, see the official documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example">
+											<a href="https://console.ng.bluemix.net/docs/services/ObjectStorage/index.html" target="_blank"><button class="btn">See Docs</button></a>
+										</div> <!-- .base-element__example -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+								<li class="header__title" id="fourth">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+												<img class="tile-image" src="../img/logos/mobile-client-access.svg">
+											</div> <!-- .tile-image-container -->
+											<h2 class="base-element__header--heading ibm-header-logo">Mobile Client Access</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												Finely tune mobile apps with operational analytics from real time performance and data usage. Ensure communications with your backend systems are secure.
+												Let your app users to log in with custom accounts or existing social accounts.
+												<br>
+												<a href="../img/screenshots/mobile-client-access.png" target="_blank"><img src="../img/screenshots/mobile-client-access.png"></a>
+												<br>
+												In this backend, we protect an endpoint that is only accessible after authentication with the Mobile Client Access service from the mobile application.
+												<br>
+												<br>
+												For more information about Mobile Client Access, see the official documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example">
+											<a href="https://console.ng.bluemix.net/docs/services/mobileaccess/index.html" target="_blank"><button class="btn">See Docs</button></a>
+										</div> <!-- .base-element__example -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+								<li class="header__title" id="fifth">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+												<img class="tile-image" src="../img/logos/push-notifications.svg">
+											</div> <!-- .tile-image-container -->
+											<h2 class="base-element__header--heading ibm-header-logo">Push Notifications</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												The Push Notification service provides a unified push service to send real-time notifications to mobile and web applications. The service provides the ability to personalize and send notifications to a segment of users, single user or broadcast to all users.
+												<br>
+												<a href="../img/screenshots/push-notifications.png" target="_blank"><img src="../img/screenshots/push-notifications.png"></a>
+												<br>
+												In this backend, we provision a Push Notifications service instance for sending push notifications to a mobile or web app.
+												<br>
+												<br>
+												For more information about Push Notifications, see the official documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example">
+											<a href="https://console.ng.bluemix.net/docs/services/mobilepush/index.html" target="_blank"><button class="btn">See Docs</button></a>
+										</div> <!-- .base-element__example -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+								<li class="header__title" id="sixth">
+									<div class="base-element">
+										<div class="base-element__header">
+											<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+												<img class="tile-image" src="../img/logos/mobile-analytics.svg">
+											</div> <!-- .tile-image-container -->
+											<h2 class="base-element__header--heading ibm-header-logo">Mobile Analytics</h2>
+										</div> <!-- .base-element__header -->
+										<div class="base-element__description">
+											<p class="description__text">
+												Mobile Analytics for Bluemix provides developers, IT administrators, and business stakeholders insight into how their mobile app is performing and how it is being used.
+												Monitor performance and usage of all your applications from your desktop or tablet. Quickly identify trends and anomalies, drill down to resolve issues and trigger alerts when key
+												metrics cross critical thresholds.
+												<br>
+												<a href="../img/screenshots/mobile-analytics.png" target="_blank"><img src="../img/screenshots/mobile-analytics.png"></a>
+												<br>
+												In this backend, we use Mobile Analytics to view device sessions, monitor crashes, and create custom charts.
+												<br>
+												<br>
+												For more information about Mobile Analytics, see the official documentation below.
+											</p> <!-- .description__text -->
+										</div> <!-- .base-element__description -->
+										<div class="base-element__example">
+											<a href="https://console.ng.bluemix.net/docs/services/mobileanalytics/index.html" target="_blank"><button class="btn">See Docs</button></a>
+										</div> <!-- .base-element__example -->
+									</div> <!-- .base-element -->
+								</li> <!-- .header__title -->
+							</ul> <!-- .base-elements-group__base-elements-->
+						</div> <!-- .base-elements-group -->
+					</div> <!-- .base-elements__element -->
+
+					<div class="components__sidebar" id="sidebar">
+						<div class="page-template__sidebar--nav">
+							<div class="nav-container">
+								<ul>
+									<li><a href="/explorer/#!/Product" target="_blank"><button class="btn--secondary" type="button">View the API Reference</button></a></li>
+									<li></li>
+									<li>
+										<div class="tile-image-container item__icon--catalog boilerplate style-scope d-tile">
+											<img class="tile-image" src="../img/logos/loopback.jpeg" alt="This application is the Loopback, which includes tools for building, profiling and monitoring Node apps.">
+										</div>  <!-- .tile-image-container -->
+										<a href="#first" class="buttons">LoopBack</a>
+									</li>
+									<li id="line">
+										<hr>
+									</li>
+									<li>
+										<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+											<img class="tile-image" src="../img/logos/cloudant.svg" alt="Massively scalable, secure, and continuously operational database">
+										</div> <!-- .tile-image-container -->
+										<a href="#second" class="buttons">Cloudant NoSQL DB</a>
+									</li>
+									<li>
+										<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+											<img class="tile-image" src="../img/logos/object-storage.svg" alt="Unstructured cloud data store">
+										</div> <!-- .tile-image-container -->
+										<a href="#third" class="buttons">Object Storage</a>
+									</li>
+									<li>
+										<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+											<img class="tile-image" src="../img/logos/mobile-client-access.svg" alt="Ensure communications with backend systems are secure">
+										</div> <!-- .tile-image-container -->
+										<a href="#fourth" class="buttons">Mobile Client Access</a>
+									</li>
+									<li>
+										<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+											<img class="tile-image" src="../img/logos/push-notifications.svg" alt="Engage Android and iOS mobile users by sending relevant content including interactive notifications">
+										</div> <!-- .tile-image-container -->
+										<a href="#fifth" class="buttons">Push Notifications</a>
+									</li>
+									<li>
+										<div class="tile-image-container item__icon--catalog service style-scope d-tile">
+											<img class="tile-image" src="../img/logos/mobile-analytics.svg" alt="Gain valuable insight into how your app is performing and being used">
+										</div> <!-- .tile-image-container -->
+										<a href="#sixth" class="buttons">Mobile Analytics</a>
+									</li>
+								</ul>
+
+								<div class="sidebar__logo">
+									<div class="header__logo">
+										<a href="/" ><h3><span class="header__logo--bold">Bluemix</span><br> Backend for Frontend</h3></a>
+									</div> <!-- .header__logo -->
+								</div> <!-- .sidebar__logo -->
+
+							</div> <!-- .nav-container -->
+						</div> <!-- .page-template -->
+					</div> <!-- .components__sidebar -->
+				</div> <!-- .base-elements__container -->
+			</div> <!-- .design-guide-base-elements -->
+		</div> <!-- .design-guide-homepage -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="/js/main.min.js"></script>
+
+	</body>
+</html>

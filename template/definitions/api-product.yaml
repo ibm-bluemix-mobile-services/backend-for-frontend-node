@@ -1,0 +1,28 @@
+product: 1.0.0
+info:
+  name: store-catalog-mobile-backend
+  title: Store Catalog Mobile Backend
+  version: 1.0.0
+  license:
+    name: 'Apache License, Version 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+  contact:
+    name: IBM Bluemix Mobile
+    url: 'http://www.ibm.com/cloud-computing/bluemix/'
+  description: "A Bluemix template application showcasing\_API Connect, Cloudant NoSQL DB, and Object Storage integration."
+apis:
+  api:
+    $ref: api.yaml
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false

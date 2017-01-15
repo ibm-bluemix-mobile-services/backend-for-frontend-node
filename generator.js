@@ -84,7 +84,7 @@
 				console.log(app.text.green('    $ bluegen\n'));
 			}).then(function () {
 				var env = '  env: \n' +
-			'    "OPENAPI_DEF": ' + '"/explorer/swagger.json"' + '\n';
+			'    "OPENAPI_SPEC": ' + '"/explorer/swagger.json"' + '\n';
 
 				appendFile(path + '/manifest.yml', env);
 			}).catch(function (e) {

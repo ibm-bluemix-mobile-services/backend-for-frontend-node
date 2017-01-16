@@ -17,10 +17,11 @@ module.exports = function(Product) {
 		{
 			description : 'Returns the image stored in Object Storage.',
 			http: {path: '/image/:container/:file', verb: 'get'},
-			accepts: [{arg: 'container', type: 'string'}, {arg: 'file', type: 'string'}],
+			accepts: [{arg: 'container', type: 'string', required: true}, {arg: 'file', type: 'string', required: true}],
 			returns: [{arg: 'image', type: 'string'}],
 		}
 	);
+
 	Product.remoteMethod (
 		'protected',
 		{

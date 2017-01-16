@@ -11,8 +11,8 @@
  *  limitations under the License.
  */
 
-module.exports = function(Product) {
-	Product.remoteMethod (
+module.exports = function(product) {
+	product.remoteMethod (
 		'image',
 		{
 			description : 'Returns the image stored in Object Storage.',
@@ -22,7 +22,7 @@ module.exports = function(Product) {
 		}
 	);
 
-	Product.remoteMethod (
+	product.remoteMethod (
 		'protected',
 		{
 			description : 'Protected endpoint. Only accessible after authentication with MCA Service.',
@@ -44,7 +44,7 @@ module.exports = function(Product) {
 
 	// clean up swagger
 	methodNames.forEach( function(methodName) {
-		disableMethods(Product, methodName);
+		disableMethods(product, methodName);
 	});
 
 	function disableMethods(model, methodName) {

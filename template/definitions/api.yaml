@@ -1,12 +1,12 @@
 paths:
-  /Products/protected:
+  /products/protected:
     get:
       responses:
         '200':
           description: 200 OK
       summary: ''
       description: Protected endpoint. Only accessible after authentication with MCA Service.
-  '/Products/image/{container}/{file}':
+  '/products/image/{container}/{file}':
     get:
       responses:
         '200':
@@ -21,48 +21,48 @@ paths:
           required: true
           in: path
       description: Returns the image stored in the Object Storage Service on Bluemix.
-  /Products:
+  /products:
     post:
       tags:
-        - Product
+        - product
       summary: Create a new instance of the model and persist it into the data source.
-      operationId: Product.create
+      operationId: product.create
       parameters:
         - name: data
           in: body
           description: Model instance data
           required: false
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       deprecated: false
     put:
       tags:
-        - Product
+        - product
       summary: Update an existing model instance or insert a new one into the data source.
-      operationId: Product.upsert
+      operationId: product.upsert
       parameters:
         - name: data
           in: body
           description: Model instance data
           required: false
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       responses:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       deprecated: false
     get:
       tags:
-        - Product
+        - product
       summary: Find all instances of the model matched by filter from the data source.
-      operationId: Product.find
+      operationId: product.find
       parameters:
         - name: filter
           in: query
@@ -76,14 +76,14 @@ paths:
           schema:
             type: array
             items:
-              $ref: '#/definitions/Product'
+              $ref: '#/definitions/product'
       deprecated: false
-  '/Products/{id}/exists':
+  '/products/{id}/exists':
     get:
       tags:
-        - Product
+        - product
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Product.exists__get_Products_{id}_exists'
+      operationId: 'product.exists__get_products_{id}_exists'
       parameters:
         - name: id
           in: path
@@ -97,12 +97,12 @@ paths:
           schema:
             type: object
       deprecated: false
-  '/Products/{id}':
+  '/products/{id}':
     head:
       tags:
-        - Product
+        - product
       summary: Check whether a model instance exists in the data source.
-      operationId: 'Product.exists__head_Products_{id}'
+      operationId: 'product.exists__head_products_{id}'
       parameters:
         - name: id
           in: path
@@ -118,9 +118,9 @@ paths:
       deprecated: false
     get:
       tags:
-        - Product
+        - product
       summary: Find a model instance by id from the data source.
-      operationId: Product.findById
+      operationId: product.findById
       parameters:
         - name: id
           in: path
@@ -138,13 +138,13 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       deprecated: false
     delete:
       tags:
-        - Product
+        - product
       summary: Delete a model instance by id from the data source.
-      operationId: Product.deleteById
+      operationId: product.deleteById
       parameters:
         - name: id
           in: path
@@ -160,16 +160,16 @@ paths:
       deprecated: false
     put:
       tags:
-        - Product
+        - product
       summary: Update attributes for a model instance and persist it into the data source.
-      operationId: Product.prototype.updateAttributes
+      operationId: product.prototype.updateAttributes
       parameters:
         - name: data
           in: body
           description: An object of model property name/value pairs
           required: false
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
         - name: id
           in: path
           description: PersistedModel id
@@ -180,14 +180,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       deprecated: false
-  /Products/findOne:
+  /products/findOne:
     get:
       tags:
-        - Product
+        - product
       summary: Find first instance of the model matched by filter from the data source.
-      operationId: Product.findOne
+      operationId: product.findOne
       parameters:
         - name: filter
           in: query
@@ -199,14 +199,14 @@ paths:
         '200':
           description: Request was successful
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       deprecated: false
-  /Products/update:
+  /products/update:
     post:
       tags:
-        - Product
+        - product
       summary: Update instances of the model matched by where from the data source.
-      operationId: Product.updateAll
+      operationId: product.updateAll
       parameters:
         - name: where
           in: query
@@ -219,7 +219,7 @@ paths:
           description: An object of model property name/value pairs
           required: false
           schema:
-            $ref: '#/definitions/Product'
+            $ref: '#/definitions/product'
       responses:
         '200':
           description: Request was successful
@@ -227,12 +227,12 @@ paths:
             description: The number of instances updated
             type: object
       deprecated: false
-  /Products/count:
+  /products/count:
     get:
       tags:
-        - Product
+        - product
       summary: Count instances of the model matched by where from the data source.
-      operationId: Product.count
+      operationId: product.count
       parameters:
         - name: where
           in: query
@@ -246,12 +246,12 @@ paths:
           schema:
             type: object
       deprecated: false
-  /Products/change-stream:
+  /products/change-stream:
     post:
       tags:
-        - Product
+        - product
       summary: Create a change stream.
-      operationId: Product.createChangeStream__post_Products_change-stream
+      operationId: product.createChangeStream__post_products_change-stream
       parameters:
         - name: options
           in: formData
@@ -266,9 +266,9 @@ paths:
       deprecated: false
     get:
       tags:
-        - Product
+        - product
       summary: Create a change stream.
-      operationId: Product.createChangeStream__get_Products_change-stream
+      operationId: product.createChangeStream__get_products_change-stream
       parameters:
         - name: options
           in: query
@@ -282,7 +282,7 @@ paths:
             type: object
       deprecated: false
 definitions:
-  Product:
+  product:
     properties:
       Name:
         type: string
@@ -315,12 +315,12 @@ definitions:
     properties: {}
 swagger: '2.0'
 info:
-  x-ibm-name: Products
+  x-ibm-name: products
   version: 1.0.0
-  title: Products
+  title: products
   description: API
   contact:
-    name: IBM Bluemix Mobile
+    name: IBM Bluemix
     url: 'http://www.ibm.com/cloud-computing/bluemix/'
   license:
     name: 'Apache License, Version 2.0'

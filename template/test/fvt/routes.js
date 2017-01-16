@@ -30,7 +30,7 @@ describe('cloudant', function()  {
 	});
 
 	it('should return a list of products', function(done) {
-		var url = 'http://localhost:3000/api/Products',
+		var url = 'http://localhost:3000/api/products',
 			headers;
 		superagent
 			.get(url)
@@ -61,7 +61,7 @@ describe('object-storage', function()  {
 	});
 
 	it('should get a jpg from object storage', function(done) {
-		var url = 'http://localhost:3000/api/Products/image/clothes/neck-tie.jpg',
+		var url = 'http://localhost:3000/api/products/image/clothes/neck-tie.jpg',
 			headers;
 		superagent
 			.get(url)
@@ -92,7 +92,7 @@ describe('mobile-client-access', function()  {
 	});
 
 	it('should return unauthorized', function(done) {
-		var url = 'http://localhost:3000/api/Products/protected',
+		var url = 'http://localhost:3000/api/products/protected',
 			headers;
 		superagent
 			.get(url)

@@ -6,9 +6,9 @@
 			"category":"Ties",
 			"price":"7.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/royal-neck-tie.jpg",
-			"thumbnail":"/api/Products/image/clothes/royal-neck-tie.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/royal-neck-tie.jpg",
+			"thumbnail":"/api/products/image/clothes/royal-neck-tie.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Count Neck Tie",
@@ -16,9 +16,9 @@
 			"category":"Ties",
 			"price":"9.95",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/count-neck-tie.jpg",
-			"thumbnail":"/api/Products/image/clothes/count-neck-tie.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/count-neck-tie.jpg",
+			"thumbnail":"/api/products/image/clothes/count-neck-tie.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Tweed Jacket",
@@ -26,9 +26,9 @@
 			"category":"Jackets",
 			"price":"179.95",
 			"rating":"★★★★☆",
-			"picture":"/api/Products/image/clothes/tweed-jacket.jpg",
-			"thumbnail":"/api/Products/image/clothes/tweed-jacket.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/tweed-jacket.jpg",
+			"thumbnail":"/api/products/image/clothes/tweed-jacket.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Sport Trouser",
@@ -36,9 +36,9 @@
 			"category":"Trousers",
 			"price":"78.95",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/sport-trouser.jpg",
-			"thumbnail":"/api/Products/image/clothes/sport-trouser.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/sport-trouser.jpg",
+			"thumbnail":"/api/products/image/clothes/sport-trouser.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Dinner Jacket",
@@ -46,9 +46,9 @@
 			"category":"Jackets",
 			"price":"149.99",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/dinner-jacket.jpg",
-			"thumbnail":"/api/Products/image/clothes/dinner-jacket.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/dinner-jacket.jpg",
+			"thumbnail":"/api/products/image/clothes/dinner-jacket.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Neck Tie",
@@ -56,9 +56,9 @@
 			"category":"Ties",
 			"price":"9.95",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/neck-tie.jpg",
-			"thumbnail":"/api/Products/image/clothes/neck-tie.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/neck-tie.jpg",
+			"thumbnail":"/api/products/image/clothes/neck-tie.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Corporal Trouser",
@@ -66,9 +66,9 @@
 			"category":"Trousers",
 			"price":"69.95",
 			"rating":"★★★★☆",
-			"picture":"/api/Products/image/clothes/corporal-trouser.jpg",
-			"thumbnail":"/api/Products/image/clothes/corporal-trouser.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/corporal-trouser.jpg",
+			"thumbnail":"/api/products/image/clothes/corporal-trouser.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Cotton T-Shirt",
@@ -76,9 +76,9 @@
 			"category":"Shirts",
 			"price":"79.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/cotton-tshirt.jpg",
-			"thumbnail":"/api/Products/image/clothes/cotton-tshirt.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/cotton-tshirt.jpg",
+			"thumbnail":"/api/products/image/clothes/cotton-tshirt.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Plain Blue T-Shirt",
@@ -86,9 +86,9 @@
 			"category":"Shirts",
 			"price":"69.95",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/plain-blue-tshirt.jpg",
-			"thumbnail":"/api/Products/image/clothes/plain-blue-tshirt.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/plain-blue-tshirt.jpg",
+			"thumbnail":"/api/products/image/clothes/plain-blue-tshirt.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Premium T-Shirt",
@@ -96,9 +96,9 @@
 			"category":"Shirts",
 			"price":"79.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/premium-tshirt.jpg",
-			"thumbnail":"/api/Products/image/clothes/premium-tshirt.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/premium-tshirt.jpg",
+			"thumbnail":"/api/products/image/clothes/premium-tshirt.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"White Trouser",
@@ -106,9 +106,9 @@
 			"category":"Trousers",
 			"price":"78.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/white-trouser.jpg",
-			"thumbnail":"/api/Products/image/clothes/white-trouser.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/white-trouser.jpg",
+			"thumbnail":"/api/products/image/clothes/white-trouser.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Tough Tweed Jacket",
@@ -116,9 +116,9 @@
 			"category":"Jackets",
 			"price":"179.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/tough-tweed-jacket.jpg",
-			"thumbnail":"/api/Products/image/clothes/tough-tweed-jacket.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/tough-tweed-jacket.jpg",
+			"thumbnail":"/api/products/image/clothes/tough-tweed-jacket.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Blue Navy T-Shirt",
@@ -126,9 +126,9 @@
 			"category":"Shirts",
 			"price":"69.95",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/blue-navy-tshirt.jpg",
-			"thumbnail":"/api/Products/image/clothes/blue-navy-tshirt.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/blue-navy-tshirt.jpg",
+			"thumbnail":"/api/products/image/clothes/blue-navy-tshirt.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Soft Trouser",
@@ -136,9 +136,9 @@
 			"category":"Trousers",
 			"price":"69.95",
 			"rating":"★★★★☆",
-			"picture":"/api/Products/image/clothes/soft-trouser.jpg",
-			"thumbnail":"/api/Products/image/clothes/soft-trouser.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/soft-trouser.jpg",
+			"thumbnail":"/api/products/image/clothes/soft-trouser.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Style Dinner Jacket",
@@ -146,9 +146,9 @@
 			"category":"Jackets",
 			"price":"149.99",
 			"rating":"★★★★★",
-			"picture":"/api/Products/image/clothes/style-dinner-jacket.jpg",
-			"thumbnail":"/api/Products/image/clothes/style-dinner-jacket.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/style-dinner-jacket.jpg",
+			"thumbnail":"/api/products/image/clothes/style-dinner-jacket.jpg",
+			"loopback__model__name":"product"
 		},
 		{
 			"name":"Baron Neck Tie",
@@ -156,9 +156,9 @@
 			"category":"Ties",
 			"price":"7.95",
 			"rating":"★★★☆☆",
-			"picture":"/api/Products/image/clothes/baron-neck-tie.jpg",
-			"thumbnail":"/api/Products/image/clothes/baron-neck-tie.jpg",
-			"loopback__model__name":"Product"
+			"picture":"/api/products/image/clothes/baron-neck-tie.jpg",
+			"thumbnail":"/api/products/image/clothes/baron-neck-tie.jpg",
+			"loopback__model__name":"product"
 		}
 	]
 }

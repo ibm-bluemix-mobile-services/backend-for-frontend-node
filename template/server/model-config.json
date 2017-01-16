@@ -13,7 +13,7 @@
 			"./mixins"
 		]
 	},
-	"Product": {
+	"product": {
 		"dataSource": "Cloudant",
 		"public": true
 	}

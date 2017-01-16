@@ -54,7 +54,7 @@ Ensure that you have:
 
    After running `cf push`, you should be able to see the application running on the Bluemix dashboard. Visiting the application route will greet you with a landing page displaying more information about this template and the ability to explore the API.
 
-5. If you want to configure or extend your backend, you can edit the API configuration locally by running the commands:
+5. To run your backend locally, type the commands:
 
 	`npm install`
 

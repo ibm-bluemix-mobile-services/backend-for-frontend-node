@@ -1,0 +1,43 @@
+{
+  "name": "Backend-for-Frontend",
+  "version": "1.0.0",
+  "description": "Bluemix Mobile services integration with LoopBack, Cloudant NoSQL DB, and Object Storage",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha 'test/fvt/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ibm-bluemix-mobile-services/backend-for-frontend-node.git"
+  },
+  "contributors": [
+    {
+      "name": "Joseph Meis",
+      "email": "jmeis@us.ibm.com"
+    }
+  ],
+  "license": "Apache License, Version 2.0",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "bluemix-logo": "^1.1.2",
+    "bms-mca-token-validation-strategy": "^2.0.3",
+    "colors": "^1.1.2",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^1.3.0",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-connector-cloudant": "^1.0.7",
+    "loopback-datasource-juggler": "^2.39.0",
+    "passport": "^0.3.2",
+    "pkgcloud": "^1.3.0",
+    "serve-favicon": "^2.0.1",
+    "superagent": "^1.8.3",
+    "winston": "^2.2.0"
+  }
+}

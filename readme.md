@@ -19,7 +19,7 @@ The backend uses the following Bluemix services and runtime:
 > **Note:** Currently the **Object Storage** service is not available in the Sydney, so this template is not operable in that region.
 
 ### Data architecture
-<img src="readme/data.svg" alt="backend architecture" width="400px"/>
+<img src="readme/data.png" alt="backend architecture" width="400px"/>
 
 ## Configuring the Backend
 

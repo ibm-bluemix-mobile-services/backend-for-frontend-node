@@ -43,14 +43,13 @@ module.exports = function(Product) {
 
 	// clean up swagger
 	methodNames.forEach( function(methodName) {
-			disableMethods(Product, methodName);
+		disableMethods(Product, methodName);
 	});
 
 	function disableMethods(model, methodName) {
 		if (methodName != 'updateAttributes') {
 			model.disableRemoteMethodByName(methodName, true);
-		}
-		else {
+		} else {
 			model.disableRemoteMethodByName(methodName, false);
 		}
 	}

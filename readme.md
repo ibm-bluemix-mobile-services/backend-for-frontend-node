@@ -1,5 +1,5 @@
 # IBM Backend for Frontend
-[![](https://img.shields.io/badge/bluemix-powered-blue.svg)](https://bluemix.net)
+[![](https://shields.eu-gb.mybluemix.net)](https://bluemix.net)
 
 ### Summary
 The Backend for Frontend template uses a **LoopBack** Node.js runtime with the **Cloudant NoSQL DB**, **Object Storage**, **Mobile Client Access**, **Push Notifications**, and **Mobile Analytics** services on Bluemix. The template exhibits common architectural design patterns that developers can use to model their backend on Bluemix to support integration for an omnichannel application. It has the the ability to browse a list of products and supports the viewing of images for each item in the product list.

@@ -79,7 +79,7 @@
 				console.log(app.text.green('    $ cf push\n'));
 				console.log('  Run your project locally');
 				console.log(app.text.green('    $ npm install'));
-				console.log(app.text.green('    $ npm run\n'));
+				console.log(app.text.green('    $ npm start\n'));
 				console.log('  Redeploy data to Cloudant NoSQL DB and Object Storage');
 				console.log(app.text.green('    $ bluegen\n'));
 			}).then(function () {

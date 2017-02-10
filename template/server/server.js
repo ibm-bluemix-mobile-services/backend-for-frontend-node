@@ -15,7 +15,8 @@ var pkg = require('./../package.json'),
 		loopback = require('loopback'),
 		boot = require('loopback-boot'),
 		colors = require('colors'),
-		logger = require('winston');
+		logger = require('winston'),
+		path = require('path');
 
 console.log(require('bluemix-logo'));
 logger.info('*** ' + pkg.name + ' ***');
@@ -31,6 +32,7 @@ app.start = function () {
 		app.emit('started');
 
 		var baseUrl = app.get('url').replace(/\/$/, '');
+		app.use("/openapi",loopback.static(path.resolve(__dirname, '../openapi')));
 		console.log('Web server listening at: %s', baseUrl);
 		var componentExplorer = app.get('loopback-component-explorer');
 		if (componentExplorer) {

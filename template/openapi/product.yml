@@ -1,0 +1,276 @@
+paths:
+  /products/protected:
+    get:
+      tags:
+        - product
+      responses:
+        '200':
+          description: 200 OK
+      summary: 'Protected endpoint. Only accessible after authentication with MCA Service.'
+      operationId: protectedEndpoint
+      description: Protected endpoint. Only accessible after authentication with MCA Service.
+  '/products/image/{container}/{file}':
+    get:
+      tags:
+        - product
+      responses:
+        '200':
+          description: 200 OK
+      parameters:
+        - name: container
+          type: string
+          required: true
+          in: path
+        - name: file
+          type: string
+          required: true
+          in: path
+      summary: 'Returns the image stored in the Object Storage Service on Bluemix.'
+      operationId: getProductImage
+      description: Returns the image stored in the Object Storage Service on Bluemix.
+  /products:
+    post:
+      tags:
+        - product
+      summary: Create a new instance of the Product model and persist it into the data source.
+      operationId: createProject
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            $ref: '#/definitions/product'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/product'
+      deprecated: false
+    put:
+      tags:
+        - product
+      summary: Update an existing Product model instance or insert a new one into the data source.
+      operationId: updateProduct
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            $ref: '#/definitions/product'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/product'
+      deprecated: false
+    get:
+      tags:
+        - product
+      summary: Find all instances of the Product model matched by filter from the data source.
+      operationId: findProduct
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/product'
+      deprecated: false
+  '/products/{id}':
+    head:
+      tags:
+        - product
+      summary: Check whether a Product model instance exists in the data source.
+      operationId: 'doesProductExist'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/idItems'
+      deprecated: false
+    get:
+      tags:
+        - product
+      summary: Find a Product model instance by id from the data source.
+      operationId: findProductById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: Filter defining fields and include
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/product'
+      deprecated: false
+    delete:
+      tags:
+        - product
+      summary: Delete a Product model instance by id from the data source.
+      operationId: deleteProductById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/deletedItems'
+      deprecated: false
+    put:
+      tags:
+        - product
+      summary: Update attributes for a Product model instance and persist it into the data source.
+      operationId: updateAttributesOfProduct
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            $ref: '#/definitions/product'
+        - name: id
+          in: path
+          description: PersistedModel id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/product'
+      deprecated: false
+  /products/findOne:
+    get:
+      tags:
+        - product
+      summary: Find first instance of the Product model matched by filter from the data source.
+      operationId: findOneProduct
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/product'
+      deprecated: false
+  /products/count:
+    get:
+      tags:
+        - product
+      summary: Count instances of the Product model matched by where from the data source.
+      operationId: countProduct
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/countedItems'
+      deprecated: false
+definitions:
+  deletedItems:
+    type: object
+    properties:
+      count:
+        type: integer
+        format: int32
+  countedItems:
+    type: object
+    properties:
+      count:
+        type: integer
+        format: int32
+  idItems:
+    properties:
+      exists:
+        type: boolean
+  product:
+    properties:
+      Name:
+        type: string
+      Description:
+        type: string
+      Rating:
+        type: string
+      Picture:
+        type: string
+      Thumbnail:
+        type: string
+      Price:
+        type: number
+        format: double
+      Category:
+        type: string
+      id:
+        type: number
+        format: double
+    required:
+      - Name
+      - Description
+      - Rating
+      - Picture
+      - Thumbnail
+      - Price
+      - Category
+    additionalProperties: false
+swagger: '2.0'
+info:
+  x-ibm-name: products
+  version: 1.0.0
+  title: products
+  description: API
+  contact:
+    name: IBM Bluemix
+    url: 'http://www.ibm.com/cloud-computing/bluemix/'
+  license:
+    name: 'Apache License, Version 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+schemes:
+  - https
+host: $(catalog.host)
+basePath: /api
+consumes:
+  - application/json
+produces:
+  - application/json

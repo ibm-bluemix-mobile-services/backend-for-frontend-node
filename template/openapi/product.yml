@@ -268,7 +268,6 @@ info:
     url: 'http://www.apache.org/licenses/LICENSE-2.0'
 schemes:
   - https
-host: $(catalog.host)
 basePath: /api
 consumes:
   - application/json

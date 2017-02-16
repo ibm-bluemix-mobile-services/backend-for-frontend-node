@@ -90,7 +90,14 @@
 			}).catch(function (e) {
 				console.log('  ' + app.text.red.bold('error'), e);
 				resolve();
-			});
+			}).then(function () {
+				var host = 'host: "' + config.app.get('name') + "." + config.app.get('region.domain') + '"';
+
+				appendFile(path + '/openapi/product.yml', host);
+			}).catch(function (e) {
+				console.log('  ' + app.text.red.bold('error'), e);
+				resolve();
+			});;
 		});
 
 		function saveFile(path, data) {
